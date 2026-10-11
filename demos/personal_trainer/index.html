@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kew Strength Studio — One-on-one strength coaching in Kew</title>
+  <meta name="description" content="One-on-one strength coaching in Kew. Explore coaching sessions, pairs training and the starter block. A demonstration site for a fictional business.">
+  <!-- search-console -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Sora:wght@500;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top wrap">
+    <a class="brand" href="#top"><img src="images/logo.svg" alt="" width="240" height="48"><span>Kew Strength Studio</span></a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-heading">
+        <p class="eyebrow">One-on-one strength coaching in Kew, VIC</p>
+        <h1 id="hero-title">Get strong with a coach who knows your name.</h1>
+      </div>
+      <figure class="hero-media">
+        <img src="images/hero.jpg" alt="Stock photo: coach guiding a client on a machine" width="1200" height="1800" fetchpriority="high">
+        <figcaption>Demonstration site. Pexels stock photo for illustration.</figcaption>
+      </figure>
+      <div class="actions">
+        <a class="btn" href="tel:0400000008">Call 0400 000 008</a>
+        <a class="text-link" href="#contact">Send an enquiry</a>
+      </div>
+      <p class="hero-description">Private studio, no memberships, no crowds. Strength and mobility coaching for adults who want to train properly and stay injury-free.</p>
+    </section>
+
+    <section id="services" class="services" aria-labelledby="services-title">
+      <div class="wrap price-layout">
+        <div class="section-intro">
+          <p class="eyebrow">Services</p>
+          <h2 id="services-title">Your training.<br>Your pace.</h2>
+        </div>
+        <ul class="price-list">
+          <li class="price-row"><div><h3>1:1 coaching</h3><p>45 minutes, programmed for you, booked weekly.</p></div><p class="price">$85</p></li>
+          <li class="price-row"><div><h3>Pairs session</h3><p>Train with a friend or partner, same coach.</p></div><p class="price">$55 each</p></li>
+          <li class="price-row"><div><h3>Starter block</h3><p>6 sessions plus a movement assessment.</p></div><p class="price">$450</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about" class="about section wrap" aria-labelledby="about-title">
+      <figure class="about-media">
+        <img src="images/about.jpg" alt="Stock photo: coach explaining a rowing session" width="1200" height="1800" loading="lazy">
+        <figcaption>Demonstration site. Pexels stock photo for illustration.</figcaption>
+      </figure>
+      <div class="about-copy">
+        <p class="eyebrow">About</p>
+        <h2 id="about-title">One coach.<br>One room.</h2>
+        <p>Kew Strength Studio is one coach and one room. Clients range from first-timers in their twenties to grandparents training for the garden, and most have been coming for years.</p>
+        <p>Qualified Cert IV, insured, and we work with your physio when you have one.</p>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery-section section wrap" aria-labelledby="gallery-title">
+      <div class="section-heading">
+        <h2 id="gallery-title">Gallery</h2>
+        <p class="fine">Demonstration site. Pexels stock images for illustration; not the studio, staff or clients.</p>
+      </div>
+      <div class="gallery">
+        <figure><img src="images/gallery-1.jpg" alt="Stock photo: pushing a sled with a coach" width="1200" height="801" loading="lazy"></figure>
+        <figure><img src="images/gallery-2.jpg" alt="Stock photo: sit-ups with a medicine ball" width="1200" height="800" loading="lazy"></figure>
+        <figure><img src="images/gallery-3.jpg" alt="Stock photo: coach guiding two clients" width="1200" height="800" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section wrap" aria-labelledby="contact-title">
+      <div class="contact-info">
+        <p class="eyebrow">Contact</p>
+        <h2 id="contact-title">Let’s talk training.</h2>
+        <address>
+          <p><strong>Address</strong><br>12 Cotham Road, Kew VIC 3101 (private studio)</p>
+          <p><strong>Phone</strong><br><a href="tel:0400000008">0400 000 008</a></p>
+          <p><strong>Email</strong><br><a href="mailto:hello@kewstrength.example">hello@kewstrength.example</a></p>
+        </address>
+        <h3>Hours</h3>
+        <table class="hours">
+          <tr><th scope="row">Mon–Fri</th><td>6:00am–8:00pm</td></tr>
+          <tr><th scope="row">Saturday</th><td>7:00am–12:00pm</td></tr>
+          <tr><th scope="row">Sunday</th><td><span lang="zh">[待客户提供：周日营业时间]</span></td></tr>
+        </table>
+      </div>
+      <!-- form_marker -->
+      <!-- form_marker: the hidden access_key below decides which email receives enquiries. See HANDOVER.md §5. -->
+      <form class="enquiry" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="{{FORM_ACCESS_KEY}}">
+        <input type="hidden" name="subject" value="New enquiry from Kew Strength Studio website">
+        <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off">
+        <h3>Send an enquiry</h3>
+        <label>Name <input type="text" name="name" required autocomplete="name"></label>
+        <label>Phone or email <input type="text" name="contact" required autocomplete="tel"></label>
+        <label>Message <textarea name="message" rows="4" required></textarea></label>
+        <button class="btn" type="submit">Send enquiry</button>
+        <p class="fine">Demonstration form — delivery is not configured. <span lang="zh">[待客户提供：Web3Forms access key]</span></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="foot"><p>Demonstration site. Business, contact details and photos are placeholders.</p></footer>
+</body>
+</html>
